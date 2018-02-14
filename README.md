@@ -12,4 +12,4 @@
     - #### Front-end: Bootstrap, HTML, JSP
     - #### Coding environment: Eclipse 
 
-
+![Example](https://github.com/coiller/Java-Applet/blob/master/WebContent/example.png)
