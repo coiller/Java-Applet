@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Java graphic capabilities</title>
+</head>
+<style>
+.form-group {
+    margin-bottom: 5px;
+}
+
+hr {
+    margin-bottom: 7px;
+}
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 bg-primary text-white">
+                <h3>
+          Parameter Settings
+        </h3>
+            </div>
+            <div class="col-8 bg-success text-white">
+                <h3>
+          Your Applet 
+        </h3></div>
+        </div>
+        <div class="row" style="height: -webkit-fill-available">
+            <div class="col-4 bg-light">
+                <form class="mt-1" action="show" method="post" target="show">
+                    <h5>  Applet Settings</h5>
+                    <div class="form-group">
+                        <label for="Applet  Size">Applet Size</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Width</span></div>
+                                    <input name="appWidth" type="number" min="0" style="width: 50px">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">px</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Height</span>
+                                        <input name="appHeight" type="number" min="0" style="width: 50px">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">px</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5>Shape Settings</h5>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="SHAPE">Shape</label>
+                                    <select name="SHAPE" id="SHAPE" class="form-control">
+                                        <option value="OVAL">Oval</option>
+                                        <option value="RECT">Rectangle</option>
+                                        <option value="ROUNDRECT">RoundRect</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="BGCOLOR">Background Color</label>
+                                    <select name="BGCOLOR" id="BGCOLOR" class="form-control">
+                                        <option value="black" style="color:black ">black</option>
+                                        <option value="blue" style="color:blue ">blue</option>
+                                        <option value="cyan" style="color:cyan ">cyan</option>
+                                        <option value="darkGray" style="color:darkGray ">darkGray</option>
+                                        <option value="gray" style="color:gray ">gray</option>
+                                        <option value="green" style="color:green ">green</option>
+                                        <option value="lightGray" style="color:lightGray ">lightGray</option>
+                                        <option value="magenta" style="color:magenta ">magenta</option>
+                                        <option value="orange" style="color:orange ">orange</option>
+                                        <option value="pink" style="color:pink ">pink</option>
+                                        <option value="red" style="color:red ">red</option>
+                                        <option value="white" style="color:black ">white</option>
+                                        <option value="yellow" style="color: yellow">yellow</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="SHAPE Size">Shape Size</label>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">Width</span></div>
+                                    <input name="X" type="number" min="0" style="width: 50px">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">px</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Height</span>
+                                        <input name="Y" type="number" min="0" style="width: 50px">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">px</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5> Massage Settings</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="FTSTYLE">Font Style</label>
+                                <select name="FTSTYLE" id="FTSTYLE" class="form-control">
+                                    <option value="REGULAR">Regular</option>
+                                    <option value="BOLD" style="font-weight: bold;">Bold</option>
+                                    <option value="ITALIC" style="font-style: italic;">Italic</option>
+                                    <option value="BOLD ITALIC" style="font-weight: bold;font-style: italic;">Bold Italic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="COLOR">Font Color</label>
+                                <select name="COLOR" id="COLOR" class="form-control">
+                                    <option value="black" style="color:black ">black</option>
+                                    <option value="blue" style="color:blue ">blue</option>
+                                    <option value="cyan" style="color:cyan ">cyan</option>
+                                    <option value="darkGray" style="color:darkGray ">darkGray</option>
+                                    <option value="gray" style="color:gray ">gray</option>
+                                    <option value="green" style="color:green ">green</option>
+                                    <option value="lightGray" style="color:lightGray ">lightGray</option>
+                                    <option value="magenta" style="color:magenta ">magenta</option>
+                                    <option value="orange" style="color:orange ">orange</option>
+                                    <option value="pink" style="color:pink ">pink</option>
+                                    <option value="red" style="color:red ">red</option>
+                                    <option value="white" style="color:black ">white</option>
+                                    <option value="yellow" style="color: yellow">yellow</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="FTSIZE">Font Size</label>
+                            <div class="input-group">
+                                <input name="FTSIZE" type="number" min="1" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">pt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MESSAGE">Massage</label>
+                        <textarea name="MESSAGE" id="MESSAGE" cols="20" rows="5" class="form-control" placeholder="The message you want to display in the shape."></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="reset" value="Reset" class="btn btn-danger">
+                        </div>
+                        <div class="col">
+                            <input class="btn btn-primary" type="submit" value="Show Banner">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-8">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe name="show" class="embed-responsive-item" src="show" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
